@@ -48,15 +48,17 @@
 }
 
 input#urlFieldInput{
-	transition: left 0.2s;
+	transition: left 0.2s, width 0.2s;
 	transition-timing-function: ease-out;
 	position: relative;
-	left: 50%;
+	left: 41%;
+	width: 60%;
 	/* width: 100%; */
 }
 input#urlFieldInput:focus{
 	position: relative;
 	left: 0%;
+	width: 100%;
 }
 
 /* THE ADDRESS BAR */
