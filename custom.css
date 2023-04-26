@@ -1,0 +1,86 @@
+
+/* ENTIRE TAB SECTION */
+#browser > footer {
+	position: absolute;
+	top: 46px;
+	width: 100%;
+}
+
+/* WEBPAGE WINDOW */
+#main > .inner{
+	top: 32px;
+}
+
+
+/* BACKGROUND STRIP FOR TABS THAT AFFECTS COLOR */
+#tabs-container.bottom{
+	background-color: var(--colorAccentBg);
+	/* top: -2px; */
+}
+
+/* BACKGROUND STRIP FOR TABS THAT CONTAIN IT*/
+.tab-strip {
+	left: 3px;
+}
+
+/* NON FOCUSED TABS */
+.tabs-bottom .tab-position .tab:not(.tab-in-accordion):not(.tab-accordion) {
+	border-radius: 5px !important;
+	background-color: var(--colorAccentBg);
+	color: var(--colorAccentFg);
+}
+
+/* SELECTED TAB */
+#browser .tab-position .tab.active{
+	background-color: var(--colorAccentBgFaded) !important; 
+	flex-grow: 2 !important;
+}
+
+/* WEBPAGE SECTION OF THE BROWSER */
+#webview-container {
+	height: 97%;
+}
+
+/* ADDRESS BAR TEXT CONTAINER*/
+.UrlFragments.UrlFragment-Wrapper.UrlFragment-Wrapper--ShouldHighlight {
+	width: 100%;
+	justify-content: center;
+}
+
+input#urlFieldInput{
+	transition: left 0.2s;
+	transition-timing-function: ease-out;
+	position: relative;
+	left: 50%;
+	/* width: 100%; */
+}
+input#urlFieldInput:focus{
+	position: relative;
+	left: 0%;
+}
+
+/* THE ADDRESS BAR */
+.toolbar-spacer-flexible ~ .UrlBar-AddressField {
+	background-color: var(--colorAccentBgFaded);
+	border: 0px;
+}
+
+/* TOP PART OF HEADER */
+.color-behind-tabs-off .toolbar-mainbar .toolbar-extensions, .color-behind-tabs-off .toolbar-mainbar .page-zoom-controls, .color-behind-tabs-off .toolbar-mainbar {
+	background-color: var(--colorAccentBg);
+}
+
+/* LINK TEXT */
+span.UrlFragment-LinkWrapper {
+	color: var(--colorAccentFg);
+}
+
+.UrlFragment--Highlight {
+	color: var(--colorAccentFg);
+}
+
+/* SHADOWS OVER HOVER BACK/FORWARD/REFRESH/EXTENSION BUTTONS */
+.toolbar-mainbar .toolbar-extensions > .button-toolbar > button, .toolbar-mainbar .page-zoom-controls > .button-toolbar > button, .toolbar-mainbar > .button-toolbar > button, .toolbar-mainbar .toolbar-extensions > .toolbar-group > .button-toolbar > button, .toolbar-mainbar .page-zoom-controls > .toolbar-group > .button-toolbar > button, .toolbar-mainbar > .toolbar-group > .button-toolbar > button {
+	border-radius: 5px;
+}
+
